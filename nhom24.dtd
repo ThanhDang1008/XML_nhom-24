@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT rapphim (rapchieu+, phongchieu+, theloai+, sodoghe+, khachhang+, phim+, lichchieu+, ve+)>
+
+<!--RẠP CHIẾU-->
+<!ELEMENT rapchieu (MaRap, TenRap, DiaChi, SucChua, SoDienThoai)>
+<!ELEMENT MaRap (#PCDATA)>
+<!ELEMENT TenRap (#PCDATA)>
+<!ELEMENT DiaChi (#PCDATA)>
+<!ELEMENT SucChua (#PCDATA)>
+<!ELEMENT SoDienThoai (#PCDATA)>
+
+<!--PHÒNG CHIẾU-->
+<!ELEMENT phongchieu (MaPhong, SoPhong, LoaiPhong, SucChua)>
+<!ELEMENT MaPhong (#PCDATA)>
+<!ELEMENT SoPhong (#PCDATA)>
+<!ELEMENT LoaiPhong (#PCDATA)>
+
+
+<!--THỂ LOẠI-->
+<!ELEMENT theloai (MaTheLoai, TenTheLoai, MoTa)>
+<!ELEMENT MaTheLoai (#PCDATA)>
+<!ELEMENT TenTheLoai (#PCDATA)>
+<!ELEMENT MoTa (#PCDATA)>
+
+<!--SƠ ĐỒ GHẾ-->
+<!ELEMENT sodoghe (MaGhe, SoGhe, Hang, Cot, LoaiGhe, TrangThai, MaPhong)>
+<!ELEMENT MaGhe (#PCDATA)>
+<!ELEMENT SoGhe (#PCDATA)>
+<!ELEMENT Hang (#PCDATA)>
+<!ELEMENT Cot (#PCDATA)>
+<!ELEMENT LoaiGhe (#PCDATA)>
+<!ELEMENT TrangThai (#PCDATA)>
+
+
+<!-- KHÁCH HÀNG -->
+<!ELEMENT khachhang (MaKH, HoTen, Email, DiaChi, SoDienThoai)>
+<!ELEMENT MaKH (#PCDATA)>
+<!ELEMENT HoTen (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
+
+
+<!--PHIM  -->
+<!ELEMENT phim (MaPhim, TenPhim, ThoiLuong, NgayKhoiChieu, MoTa, MaTheLoai)>
+<!ELEMENT MaPhim (#PCDATA)>
+<!ELEMENT TenPhim (#PCDATA)>
+<!ELEMENT ThoiLuong (#PCDATA)>
+<!ELEMENT NgayKhoiChieu (#PCDATA)>
+
+
+
+<!--LỊCH CHIẾU -->
+<!ELEMENT lichchieu (MaLich, MaPhim, ThoiGianChieu, GiaVe, MaPhong)>
+<!ELEMENT MaLich (#PCDATA)>
+<!ELEMENT ThoiGianChieu (#PCDATA)>
+<!ELEMENT GiaVe (#PCDATA)>
+
+
+
+<!-- VÉ -->
+<!ELEMENT ve (MaVe, MaLich, MaKH, NgayMua, SoGhe)>
+<!ELEMENT MaVe (#PCDATA)>
+<!ELEMENT NgayMua (#PCDATA)>

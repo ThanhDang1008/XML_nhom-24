@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rapphim SYSTEM "nhom24.dtd">
+
+<rapphim>
+    <!-- RAP CHIEU-->
+    <rapchieu>
+        <MaRap>1</MaRap>
+        <TenRap>CGV Aeon Mall Tân Phú</TenRap>
+        <DiaChi>30 Bờ Bao Tân Thắng, Sơn Kỳ, Tân Phú, TP.HCM</DiaChi>
+        <SucChua>300</SucChua>
+        <SoDienThoai>02836201010</SoDienThoai>
+    </rapchieu>
+    <rapchieu>
+        <MaRap>2</MaRap>
+        <TenRap>Galaxy Nguyễn Du</TenRap>
+        <DiaChi>116 Nguyễn Du, Quận 1, TP.HCM</DiaChi>
+        <SucChua>250</SucChua>
+        <SoDienThoai>02839297007</SoDienThoai>
+    </rapchieu>
+    <rapchieu>
+        <MaRap>3</MaRap>
+        <TenRap>Lotte Cinema Cần Thơ</TenRap>
+        <DiaChi>Tầng 5 Sense City, 1 Hòa Bình, Ninh Kiều, Cần Thơ</DiaChi>
+        <SucChua>280</SucChua>
+        <SoDienThoai>02923687456</SoDienThoai>
+    </rapchieu>
+    <rapchieu>
+        <MaRap>4</MaRap>
+        <TenRap>BHD Star Bitexco</TenRap>
+        <DiaChi>2 Hải Triều, Quận 1, TP.HCM</DiaChi>
+        <SucChua>220</SucChua>
+        <SoDienThoai>02862641414</SoDienThoai>
+    </rapchieu>
+    <rapchieu>
+        <MaRap>5</MaRap>
+        <TenRap>CGV Vincom Cần Thơ</TenRap>
+        <DiaChi>209 Đ. 30 Tháng 4, Xuân Khánh, Ninh Kiều, Cần Thơ</DiaChi>
+        <SucChua>260</SucChua>
+        <SoDienThoai>02923856789</SoDienThoai>
+    </rapchieu>
+    <rapchieu>
+        <MaRap>6</MaRap>
+        <TenRap>Beta Cinema Mỹ Tho</TenRap>
+        <DiaChi>50 Ấp Bắc, P.10, TP. Mỹ Tho, Tiền Giang</DiaChi>
+        <SucChua>180</SucChua>
+        <SoDienThoai>02733891234</SoDienThoai>
+    </rapchieu>
+    <rapchieu>
+        <MaRap>7</MaRap>
+        <TenRap>CGV Vincom Hà Nội</TenRap>
+        <DiaChi>191 Bà Triệu, Hai Bà Trưng, Hà Nội</DiaChi>
+        <SucChua>320</SucChua>
+        <SoDienThoai>02439749999</SoDienThoai>
+    </rapchieu>
+    
+    <!-- PHONG CHIEU -->
+    <phongchieu>
+        <MaPhong>1</MaPhong>
+        <SoPhong>101</SoPhong>
+        <LoaiPhong>Phòng 2D tiêu chuẩn</LoaiPhong>
+        <SucChua>150</SucChua>
+    </phongchieu>
+    <phongchieu>
+        <MaPhong>2</MaPhong>
+        <SoPhong>102</SoPhong>
+        <LoaiPhong>Phòng 3D</LoaiPhong>
+        <SucChua>120</SucChua>
+    </phongchieu>
+    <phongchieu>
+        <MaPhong>3</MaPhong>
+        <SoPhong>201</SoPhong>
+        <LoaiPhong>Phòng IMAX</LoaiPhong>
+        <SucChua>200</SucChua>
+    </phongchieu>
+    <phongchieu>
+        <MaPhong>4</MaPhong>
+        <SoPhong>202</SoPhong>
+        <LoaiPhong>Phòng 4DX</LoaiPhong>
+        <SucChua>100</SucChua>
+    </phongchieu>
+    <phongchieu>
+        <MaPhong>5</MaPhong>
+        <SoPhong>VIP01</SoPhong>
+        <LoaiPhong>Phòng VIP Gold Class</LoaiPhong>
+        <SucChua>60</SucChua>
+    </phongchieu>
+    <phongchieu>
+        <MaPhong>6</MaPhong>
+        <SoPhong>203</SoPhong>
+        <LoaiPhong>Phòng Couple</LoaiPhong>
+        <SucChua>40</SucChua>
+    </phongchieu>
+    <phongchieu>
+        <MaPhong>7</MaPhong>
+        <SoPhong>204</SoPhong>
+        <LoaiPhong>Phòng 2D Premium</LoaiPhong>
+        <SucChua>90</SucChua>
+    </phongchieu>
+    
+
+    <!-- THE LOAI  -->
+    <theloai>
+        <MaTheLoai>1</MaTheLoai>
+        <TenTheLoai>Hành động</TenTheLoai>
+        <MoTa>Phim có nhiều cảnh chiến đấu, rượt đuổi, kỹ xảo cao</MoTa>
+    </theloai>
+    <theloai>
+        <MaTheLoai>2</MaTheLoai>
+        <TenTheLoai>Tình cảm</TenTheLoai>
+        <MoTa>Phim xoay quanh câu chuyện tình yêu, cảm xúc</MoTa>
+    </theloai>
+    <theloai>
+        <MaTheLoai>3</MaTheLoai>
+        <TenTheLoai>Kinh dị</TenTheLoai>
+        <MoTa>Phim mang yếu tố sợ hãi, hồi hộp, rùng rợn</MoTa>
+    </theloai>
+    <theloai>
+        <MaTheLoai>4</MaTheLoai>
+        <TenTheLoai>Hài hước</TenTheLoai>
+        <MoTa>Phim giúp khán giả thư giãn và cười sảng khoái</MoTa>
+    </theloai>
+    <theloai>
+        <MaTheLoai>5</MaTheLoai>
+        <TenTheLoai>Hoạt hình</TenTheLoai>
+        <MoTa>Phim phù hợp trẻ em và gia đình</MoTa>
+    </theloai>
+    <theloai>
+        <MaTheLoai>6</MaTheLoai>
+        <TenTheLoai>Khoa học viễn tưởng</TenTheLoai>
+        <MoTa>Phim có yếu tố công nghệ, tương lai và không gian</MoTa>
+    </theloai>
+    <theloai>
+        <MaTheLoai>7</MaTheLoai>
+        <TenTheLoai>Chiến tranh</TenTheLoai>
+        <MoTa>Phim lấy bối cảnh quân đội và xung đột lịch sử</MoTa>
+    </theloai>
+   <!-- SO DO GHE  -->
+<sodoghe>
+        <MaGhe>1</MaGhe>
+        <SoGhe>A1</SoGhe>
+        <Hang>A</Hang>
+        <Cot>1</Cot>
+        <LoaiGhe>Ghế thường</LoaiGhe>
+        <TrangThai>Trống</TrangThai>
+        <MaPhong>1</MaPhong>
+    </sodoghe>
+    <sodoghe>
+        <MaGhe>2</MaGhe>
+        <SoGhe>A2</SoGhe>
+        <Hang>A</Hang>
+        <Cot>2</Cot>
+        <LoaiGhe>Ghế VIP</LoaiGhe>
+        <TrangThai>Đã đặt</TrangThai>
+        <MaPhong>2</MaPhong>
+    </sodoghe>
+    <sodoghe>
+        <MaGhe>3</MaGhe>
+        <SoGhe>B1</SoGhe>
+        <Hang>B</Hang>
+        <Cot>1</Cot>
+        <LoaiGhe>Ghế thường</LoaiGhe>
+        <TrangThai>Trống</TrangThai>
+        <MaPhong>3</MaPhong>
+    </sodoghe>
+    <sodoghe>
+        <MaGhe>4</MaGhe>
+        <SoGhe>B2</SoGhe>
+        <Hang>B</Hang>
+        <Cot>2</Cot>
+        <LoaiGhe>Ghế VIP</LoaiGhe>
+        <TrangThai>Trống</TrangThai>
+        <MaPhong>4</MaPhong>
+    </sodoghe>
+    <sodoghe>
+        <MaGhe>5</MaGhe>
+        <SoGhe>C1</SoGhe>
+        <Hang>C</Hang>
+        <Cot>1</Cot>
+        <LoaiGhe>Ghế thường</LoaiGhe>
+        <TrangThai>Trống</TrangThai>
+        <MaPhong>5</MaPhong>
+    </sodoghe>
+    <sodoghe>
+        <MaGhe>6</MaGhe>
+        <SoGhe>C2</SoGhe>
+        <Hang>C</Hang>
+        <Cot>2</Cot>
+        <LoaiGhe>Ghế thường</LoaiGhe>
+        <TrangThai>Đã đặt</TrangThai>
+        <MaPhong>6</MaPhong>
+    </sodoghe>
+    <sodoghe>
+        <MaGhe>7</MaGhe>
+        <SoGhe>D1</SoGhe>
+        <Hang>D</Hang>
+        <Cot>1</Cot>
+        <LoaiGhe>Ghế VIP</LoaiGhe>
+        <TrangThai>Trống</TrangThai>
+        <MaPhong>7</MaPhong>
+    </sodoghe>
+    
+    <!-- KHACH HANG  -->
+    <khachhang>
+        <MaKH>1</MaKH>
+        <HoTen>Nguyễn Văn Minh</HoTen>
+        <Email>minh.nguyen@gmail.com</Email>
+        <DiaChi>Quận 1, TP.HCM</DiaChi>
+        <SoDienThoai>0901234567</SoDienThoai>
+    </khachhang>
+    <khachhang>
+        <MaKH>2</MaKH>
+        <HoTen>Trần Thị Mai</HoTen>
+        <Email>mai.tran@gmail.com</Email>
+        <DiaChi>Quận Ninh Kiều, Cần Thơ</DiaChi>
+        <SoDienThoai>0907654321</SoDienThoai>
+    </khachhang>
+    <khachhang>
+        <MaKH>3</MaKH>
+        <HoTen>Lê Hoàng Phúc</HoTen>
+        <Email>phuc.le@gmail.com</Email>
+        <DiaChi>Quận Tân Phú, TP.HCM</DiaChi>
+        <SoDienThoai>0934567890</SoDienThoai>
+    </khachhang>
+    <khachhang>
+        <MaKH>4</MaKH>
+        <HoTen>Nguyễn Thị Lan</HoTen>
+        <Email>lan.nguyen@gmail.com</Email>
+        <DiaChi>Quận Bình Thạnh, TP.HCM</DiaChi>
+        <SoDienThoai>0912345678</SoDienThoai>
+    </khachhang>
+    <khachhang>
+        <MaKH>5</MaKH>
+        <HoTen>Phạm Anh Tuấn</HoTen>
+        <Email>tuan.pham@gmail.com</Email>
+        <DiaChi>Quận Cái Răng, Cần Thơ</DiaChi>
+        <SoDienThoai>0976543210</SoDienThoai>
+    </khachhang>
+    <khachhang>
+        <MaKH>6</MaKH>
+        <HoTen>Đỗ Bích Hằng</HoTen>
+        <Email>hang.do@gmail.com</Email>
+        <DiaChi>TP. Mỹ Tho, Tiền Giang</DiaChi>
+        <SoDienThoai>0938889999</SoDienThoai>
+    </khachhang>
+    <khachhang>
+        <MaKH>7</MaKH>
+        <HoTen>Võ Hoài Nam</HoTen>
+        <Email>nam.vo@gmail.com</Email>
+        <DiaChi>Hai Bà Trưng, Hà Nội</DiaChi>
+        <SoDienThoai>0916777888</SoDienThoai>
+    </khachhang>
+    <!-- PHIM -->
+    <phim>
+        <MaPhim>1</MaPhim>
+        <TenPhim>Avengers: Endgame</TenPhim>
+        <ThoiLuong>180</ThoiLuong>
+        <NgayKhoiChieu>2019-04-26</NgayKhoiChieu>
+        <MoTa>Phim siêu anh hùng đánh bại Thanos</MoTa>
+        <MaTheLoai>1</MaTheLoai>
+    </phim>
+    <phim>
+        <MaPhim>2</MaPhim>
+        <TenPhim>Conan Movie 26</TenPhim>
+        <ThoiLuong>120</ThoiLuong>
+        <NgayKhoiChieu>2023-07-14</NgayKhoiChieu>
+        <MoTa>Thám tử Conan phá án tại London</MoTa>
+        <MaTheLoai>2</MaTheLoai>
+    </phim>
+    <phim>
+        <MaPhim>3</MaPhim>
+        <TenPhim>Fast and Furious 10</TenPhim>
+        <ThoiLuong>145</ThoiLuong>
+        <NgayKhoiChieu>2023-05-19</NgayKhoiChieu>
+        <MoTa>Cuộc đua sinh tử đầy kịch tính</MoTa>
+        <MaTheLoai>3</MaTheLoai>
+    </phim>
+    <phim>
+        <MaPhim>4</MaPhim>
+        <TenPhim>Inside Out 2</TenPhim>
+        <ThoiLuong>110</ThoiLuong>
+        <NgayKhoiChieu>2024-06-15</NgayKhoiChieu>
+        <MoTa>Cuộc phiêu lưu cảm xúc mới</MoTa>
+        <MaTheLoai>4</MaTheLoai>
+    </phim>
+    <phim>
+        <MaPhim>5</MaPhim>
+        <TenPhim>Godzilla x Kong</TenPhim>
+        <ThoiLuong>130</ThoiLuong>
+        <NgayKhoiChieu>2024-04-12</NgayKhoiChieu>
+        <MoTa>Hai quái thú huyền thoại hợp lực</MoTa>
+        <MaTheLoai>5</MaTheLoai>
+    </phim>
+    <phim>
+        <MaPhim>6</MaPhim>
+        <TenPhim>Oppenheimer</TenPhim>
+        <ThoiLuong>180</ThoiLuong>
+        <NgayKhoiChieu>2023-07-21</NgayKhoiChieu>
+        <MoTa>Tiểu sử cha đẻ bom nguyên tử</MoTa>
+        <MaTheLoai>6</MaTheLoai>
+    </phim>
+    <phim>
+        <MaPhim>7</MaPhim>
+        <TenPhim>Doraemon: Nobita và bản giao hưởng địa cầu</TenPhim>
+        <ThoiLuong>115</ThoiLuong>
+        <NgayKhoiChieu>2024-03-01</NgayKhoiChieu>
+        <MoTa>Cuộc phiêu lưu âm nhạc của Nobita</MoTa>
+        <MaTheLoai>4</MaTheLoai>
+    </phim>
+    <!-- LỊCH CHIẾU -->
+    <lichchieu>
+        <MaLich>1</MaLich>
+        <MaPhim>1</MaPhim>
+        <ThoiGianChieu>2024-07-01T19:00:00</ThoiGianChieu>
+        <GiaVe>120000</GiaVe>
+        <MaPhong>1</MaPhong>
+    </lichchieu>
+    <lichchieu>
+        <MaLich>2</MaLich>
+        <MaPhim>2</MaPhim>
+        <ThoiGianChieu>2024-07-02T14:00:00</ThoiGianChieu>
+        <GiaVe>90000</GiaVe>
+        <MaPhong>2</MaPhong>
+    </lichchieu>
+    <lichchieu>
+        <MaLich>3</MaLich>
+        <MaPhim>3</MaPhim>
+        <ThoiGianChieu>2024-07-03T21:00:00</ThoiGianChieu>
+        <GiaVe>110000</GiaVe>
+        <MaPhong>3</MaPhong>
+    </lichchieu>
+    <lichchieu>
+        <MaLich>4</MaLich>
+        <MaPhim>4</MaPhim>
+        <ThoiGianChieu>2024-07-04T10:00:00</ThoiGianChieu>
+        <GiaVe>85000</GiaVe>
+        <MaPhong>1</MaPhong>
+    </lichchieu>
+    <lichchieu>
+        <MaLich>5</MaLich>
+        <MaPhim>5</MaPhim>
+        <ThoiGianChieu>2024-07-05T16:00:00</ThoiGianChieu>
+        <GiaVe>100000</GiaVe>
+        <MaPhong>2</MaPhong>
+    </lichchieu>
+    <lichchieu>
+        <MaLich>6</MaLich>
+        <MaPhim>6</MaPhim>
+        <ThoiGianChieu>2024-07-06T20:00:00</ThoiGianChieu>
+        <GiaVe>130000</GiaVe>
+        <MaPhong>3</MaPhong>
+    </lichchieu>
+    <lichchieu>
+        <MaLich>7</MaLich>
+        <MaPhim>7</MaPhim>
+        <ThoiGianChieu>2024-07-07T09:00:00</ThoiGianChieu>
+        <GiaVe>75000</GiaVe>
+        <MaPhong>1</MaPhong>
+    </lichchieu>
+    <!-- VÉ -->
+    <ve>
+        <MaVe>1</MaVe>
+        <MaLich>1</MaLich>
+        <MaKH>1</MaKH>
+        <NgayMua>2024-06-29T10:30:00</NgayMua>
+        <SoGhe>A1</SoGhe>
+    </ve>
+    <ve>
+        <MaVe>2</MaVe>
+        <MaLich>2</MaLich>
+        <MaKH>2</MaKH>
+        <NgayMua>2024-06-30T09:00:00</NgayMua>
+        <SoGhe>B3</SoGhe>
+    </ve>
+    <ve>
+        <MaVe>3</MaVe>
+        <MaLich>3</MaLich>
+        <MaKH>3</MaKH>
+        <NgayMua>2024-07-01T11:15:00</NgayMua>
+        <SoGhe>C5</SoGhe>
+    </ve>
+    <ve>
+        <MaVe>4</MaVe>
+        <MaLich>4</MaLich>
+        <MaKH>4</MaKH>
+        <NgayMua>2024-07-02T14:10:00</NgayMua>
+        <SoGhe>D2</SoGhe>
+    </ve>
+    <ve>
+        <MaVe>5</MaVe>
+        <MaLich>5</MaLich>
+        <MaKH>5</MaKH>
+        <NgayMua>2024-07-03T15:45:00</NgayMua>
+        <SoGhe>A4</SoGhe>
+    </ve>
+    <ve>
+        <MaVe>6</MaVe>
+        <MaLich>6</MaLich>
+        <MaKH>6</MaKH>
+        <NgayMua>2024-07-04T18:20:00</NgayMua>
+        <SoGhe>B1</SoGhe>
+    </ve>
+    <ve>
+        <MaVe>7</MaVe>
+        <MaLich>7</MaLich>
+        <MaKH>7</MaKH>
+        <NgayMua>2024-07-05T08:50:00</NgayMua>
+        <SoGhe>C2</SoGhe>
+    </ve>
+
+</rapphim>

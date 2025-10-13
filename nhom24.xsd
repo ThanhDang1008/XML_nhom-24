@@ -172,7 +172,7 @@
         </xs:keyref>
         <xs:keyref name="veLichRef" refer="lichchieuKey">
             <xs:selector xpath="ve"/>
-            <xs:field xpath="MaLichChieu"/>
+            <xs:field xpath="MaLich"/>
         </xs:keyref>
         <xs:keyref name="veKhachhangRef" refer="khachhangKey">
             <xs:selector xpath="ve"/>

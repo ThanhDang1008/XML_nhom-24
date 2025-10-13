@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema 
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    targetNamespace="http://example.com/rapphim"
-    xmlns="http://example.com/rapphim"
-    elementFormDefault="qualified">
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
     
     <!-- PHẦN TỬ GỐC -->
     <xs:element name="rapphim">
@@ -149,7 +147,7 @@
         </xs:key>
         <xs:key name="lichchieuKey">
             <xs:selector xpath="lichchieu"/>
-            <xs:field xpath="MaLichChieu"/>
+            <xs:field xpath="MaLich"/>
         </xs:key>
         <xs:key name="veKey">
             <xs:selector xpath="ve"/>

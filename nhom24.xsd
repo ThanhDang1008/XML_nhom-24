@@ -1,9 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema 
-    xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     
-    <!-- PHẦN TỬ GỐC -->
+    <xs:simpleType name="positiveInteger">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="phoneNumber">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{10,11}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="email">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[^@]+@[^@]+\.[^@]+"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="trangThaiGhe">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Trống"/>
+            <xs:enumeration value="Đã đặt"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="loaiGhe">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Ghế thường"/>
+            <xs:enumeration value="Ghế VIP"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="loaiPhong">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="Phòng (2D|3D|IMAX|4DX|VIP Gold Class|Couple|2D Premium)"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="giaVe">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="50000"/>
+            <xs:maxInclusive value="200000"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="thoiLuong">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="60"/>
+            <xs:maxInclusive value="300"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
     <xs:element name="rapphim">
         <xs:complexType>
             <xs:sequence>
@@ -12,23 +61,24 @@
                 <xs:element name="rapchieu" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="MaRap" type="xs:integer"/>
-                            <xs:element name="TenRap" type="xs:string"/>
-                            <xs:element name="DiaChi" type="xs:string"/>
-                            <xs:element name="SucChua" type="xs:integer"/>
-                            <xs:element name="SoDienThoai" type="xs:string"/>
+                            <xs:element name="MaRap" type="positiveInteger"/>
+                            <xs:element name="TenRap" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                            <xs:element name="DiaChi" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                            <xs:element name="SucChua" type="positiveInteger"/>
+                            <xs:element name="SoDienThoai" type="phoneNumber"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
                 
-                <!-- PHÒNG CHIẾU -->
+                <!-- PHÒNG CHIẾU - them MaRap -->
                 <xs:element name="phongchieu" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="MaPhong" type="xs:integer"/>
+                            <xs:element name="MaPhong" type="positiveInteger"/>
+                            <xs:element name="MaRap" type="positiveInteger"/>
                             <xs:element name="SoPhong" type="xs:string"/>
-                            <xs:element name="LoaiPhong" type="xs:string"/>
-                            <xs:element name="SucChua" type="xs:integer"/>
+                            <xs:element name="LoaiPhong" type="loaiPhong"/>
+                            <xs:element name="SucChua" type="positiveInteger"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
@@ -37,7 +87,7 @@
                 <xs:element name="theloai" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="MaTheLoai" type="xs:integer"/>
+                            <xs:element name="MaTheLoai" type="positiveInteger"/>
                             <xs:element name="TenTheLoai" type="xs:string"/>
                             <xs:element name="MoTa" type="xs:string"/>
                         </xs:sequence>
@@ -48,13 +98,13 @@
                 <xs:element name="sodoghe" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="MaGhe" type="xs:integer"/>
+                            <xs:element name="MaGhe" type="positiveInteger"/>
                             <xs:element name="SoGhe" type="xs:string"/>
                             <xs:element name="Hang" type="xs:string"/>
-                            <xs:element name="Cot" type="xs:integer"/>
-                            <xs:element name="LoaiGhe" type="xs:string"/>
-                            <xs:element name="TrangThai" type="xs:string"/>
-                            <xs:element name="MaPhong" type="xs:integer"/>
+                            <xs:element name="Cot" type="positiveInteger"/>
+                            <xs:element name="LoaiGhe" type="loaiGhe"/>
+                            <xs:element name="TrangThai" type="trangThaiGhe"/>
+                            <xs:element name="MaPhong" type="positiveInteger"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
@@ -63,11 +113,11 @@
                 <xs:element name="khachhang" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="MaKH" type="xs:integer"/>
+                            <xs:element name="MaKH" type="positiveInteger"/>
                             <xs:element name="HoTen" type="xs:string"/>
-                            <xs:element name="Email" type="xs:string"/>
+                            <xs:element name="Email" type="email"/>
                             <xs:element name="DiaChi" type="xs:string"/>
-                            <xs:element name="SoDienThoai" type="xs:string"/>
+                            <xs:element name="SoDienThoai" type="phoneNumber"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
@@ -76,12 +126,12 @@
                 <xs:element name="phim" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="MaPhim" type="xs:integer"/>
+                            <xs:element name="MaPhim" type="positiveInteger"/>
                             <xs:element name="TenPhim" type="xs:string"/>
-                            <xs:element name="ThoiLuong" type="xs:integer"/>
+                            <xs:element name="ThoiLuong" type="thoiLuong"/>
                             <xs:element name="NgayKhoiChieu" type="xs:date"/>
                             <xs:element name="MoTa" type="xs:string"/>
-                            <xs:element name="MaTheLoai" type="xs:integer"/>
+                            <xs:element name="MaTheLoai" type="positiveInteger"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
@@ -90,24 +140,24 @@
                 <xs:element name="lichchieu" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="MaLich" type="xs:integer"/>
-                            <xs:element name="MaPhim" type="xs:integer"/>
+                            <xs:element name="MaLich" type="positiveInteger"/>
+                            <xs:element name="MaPhim" type="positiveInteger"/>
                             <xs:element name="ThoiGianChieu" type="xs:dateTime"/>
-                            <xs:element name="GiaVe" type="xs:integer"/>
-                            <xs:element name="MaPhong" type="xs:integer"/>
+                            <xs:element name="GiaVe" type="giaVe"/>
+                            <xs:element name="MaPhong" type="positiveInteger"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
                 
-                <!-- VÉ -->
+                <!-- VÉ - them MaGhe  -->
                 <xs:element name="ve" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="MaVe" type="xs:integer"/>
-                            <xs:element name="MaLich" type="xs:integer"/>
-                            <xs:element name="MaKH" type="xs:integer"/>
+                            <xs:element name="MaVe" type="positiveInteger"/>
+                            <xs:element name="MaLich" type="positiveInteger"/>
+                            <xs:element name="MaKH" type="positiveInteger"/>
                             <xs:element name="NgayMua" type="xs:dateTime"/>
-                            <xs:element name="SoGhe" type="xs:string"/>
+                            <xs:element name="MaGhe" type="positiveInteger"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
@@ -115,8 +165,7 @@
             </xs:sequence>
         </xs:complexType>
         
-        
-        
+        <!-- khoa chinh -->
         <xs:key name="rapchieuKey">
             <xs:selector xpath="rapchieu"/>
             <xs:field xpath="MaRap"/>
@@ -141,46 +190,69 @@
             <xs:selector xpath="khachhang"/>
             <xs:field xpath="MaKH"/>
         </xs:key>
+        
         <xs:key name="phimKey">
             <xs:selector xpath="phim"/>
             <xs:field xpath="MaPhim"/>
         </xs:key>
+        
         <xs:key name="lichchieuKey">
             <xs:selector xpath="lichchieu"/>
             <xs:field xpath="MaLich"/>
         </xs:key>
+        
         <xs:key name="veKey">
             <xs:selector xpath="ve"/>
             <xs:field xpath="MaVe"/>
         </xs:key>
         
+        <!-- Key for unique SoGhe per MaPhong -->
+        <xs:key name="sodogheSoGheKey">
+            <xs:selector xpath="sodoghe"/>
+            <xs:field xpath="MaPhong"/>
+            <xs:field xpath="SoGhe"/>
+        </xs:key>
+        
+        <!-- Keyrefs -->
+        <xs:keyref name="phongchieuRapRef" refer="rapchieuKey">
+            <xs:selector xpath="phongchieu"/>
+            <xs:field xpath="MaRap"/>
+        </xs:keyref>
+        
         <xs:keyref name="lichchieuPhongRef" refer="phongchieuKey">
             <xs:selector xpath="lichchieu"/>
             <xs:field xpath="MaPhong"/>
         </xs:keyref>
+        
         <xs:keyref name="lichchieuPhimRef" refer="phimKey">
             <xs:selector xpath="lichchieu"/>
             <xs:field xpath="MaPhim"/>
         </xs:keyref>
+        
         <xs:keyref name="sodoghePhongRef" refer="phongchieuKey">
             <xs:selector xpath="sodoghe"/>
             <xs:field xpath="MaPhong"/>
         </xs:keyref>
+        
         <xs:keyref name="phimTheLoaiRef" refer="theloaiKey">
             <xs:selector xpath="phim"/>
             <xs:field xpath="MaTheLoai"/>
         </xs:keyref>
+        
         <xs:keyref name="veLichRef" refer="lichchieuKey">
             <xs:selector xpath="ve"/>
             <xs:field xpath="MaLich"/>
         </xs:keyref>
+        
         <xs:keyref name="veKhachhangRef" refer="khachhangKey">
             <xs:selector xpath="ve"/>
             <xs:field xpath="MaKH"/>
         </xs:keyref>
+        
         <xs:keyref name="veGheRef" refer="sodogheKey">
             <xs:selector xpath="ve"/>
-            <xs:field xpath="MaGhe"/>  
+            <xs:field xpath="MaGhe"/>
         </xs:keyref>
+        
     </xs:element>
 </xs:schema>

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rapphim xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="nhom24.xsd">
-    
-    <!-- RAP CHIEU -->
+<?xml-stylesheet type="text/xsl" href="rapphim.xsl"?>
+<!DOCTYPE rapphim >
+
+<rapphim>
+    <!-- RAP CHIEU-->
     <rapchieu>
         <MaRap>1</MaRap>
         <TenRap>CGV Aeon Mall Tân Phú</TenRap>
@@ -53,58 +54,52 @@
         <SoDienThoai>02439749999</SoDienThoai>
     </rapchieu>
     
-    <!-- PHONG CHIEU - them MaRap  -->
+    <!-- PHONG CHIEU -->
     <phongchieu>
         <MaPhong>1</MaPhong>
-        <MaRap>1</MaRap>
         <SoPhong>101</SoPhong>
-        <LoaiPhong>Phòng 2D</LoaiPhong>
+        <LoaiPhong>Phòng 2D tiêu chuẩn</LoaiPhong>
         <SucChua>150</SucChua>
     </phongchieu>
     <phongchieu>
         <MaPhong>2</MaPhong>
-        <MaRap>1</MaRap>
         <SoPhong>102</SoPhong>
         <LoaiPhong>Phòng 3D</LoaiPhong>
         <SucChua>120</SucChua>
     </phongchieu>
     <phongchieu>
         <MaPhong>3</MaPhong>
-        <MaRap>2</MaRap>
         <SoPhong>201</SoPhong>
         <LoaiPhong>Phòng IMAX</LoaiPhong>
         <SucChua>200</SucChua>
     </phongchieu>
     <phongchieu>
         <MaPhong>4</MaPhong>
-        <MaRap>2</MaRap>
         <SoPhong>202</SoPhong>
         <LoaiPhong>Phòng 4DX</LoaiPhong>
         <SucChua>100</SucChua>
     </phongchieu>
     <phongchieu>
         <MaPhong>5</MaPhong>
-        <MaRap>3</MaRap>
         <SoPhong>VIP01</SoPhong>
         <LoaiPhong>Phòng VIP Gold Class</LoaiPhong>
         <SucChua>60</SucChua>
     </phongchieu>
     <phongchieu>
         <MaPhong>6</MaPhong>
-        <MaRap>3</MaRap>
         <SoPhong>203</SoPhong>
         <LoaiPhong>Phòng Couple</LoaiPhong>
         <SucChua>40</SucChua>
     </phongchieu>
     <phongchieu>
         <MaPhong>7</MaPhong>
-        <MaRap>4</MaRap>
         <SoPhong>204</SoPhong>
         <LoaiPhong>Phòng 2D Premium</LoaiPhong>
         <SucChua>90</SucChua>
     </phongchieu>
     
-    <!-- THE LOAI -->
+    
+    <!-- THE LOAI  -->
     <theloai>
         <MaTheLoai>1</MaTheLoai>
         <TenTheLoai>Hành động</TenTheLoai>
@@ -140,8 +135,7 @@
         <TenTheLoai>Chiến tranh</TenTheLoai>
         <MoTa>Phim lấy bối cảnh quân đội và xung đột lịch sử</MoTa>
     </theloai>
-    
-    <!-- SO DO GHE -->
+    <!-- SO DO GHE  -->
     <sodoghe>
         <MaGhe>1</MaGhe>
         <SoGhe>A1</SoGhe>
@@ -206,7 +200,7 @@
         <MaPhong>7</MaPhong>
     </sodoghe>
     
-    <!-- KHACH HANG -->
+    <!-- KHACH HANG  -->
     <khachhang>
         <MaKH>1</MaKH>
         <HoTen>Nguyễn Văn Minh</HoTen>
@@ -256,8 +250,7 @@
         <DiaChi>Hai Bà Trưng, Hà Nội</DiaChi>
         <SoDienThoai>0916777888</SoDienThoai>
     </khachhang>
-    
-    <!-- PHIM - them  MaTheLoai  -->
+    <!-- PHIM -->
     <phim>
         <MaPhim>1</MaPhim>
         <TenPhim>Avengers: Endgame</TenPhim>
@@ -280,7 +273,7 @@
         <ThoiLuong>145</ThoiLuong>
         <NgayKhoiChieu>2023-05-19</NgayKhoiChieu>
         <MoTa>Cuộc đua sinh tử đầy kịch tính</MoTa>
-        <MaTheLoai>1</MaTheLoai>
+        <MaTheLoai>3</MaTheLoai>
     </phim>
     <phim>
         <MaPhim>4</MaPhim>
@@ -296,7 +289,7 @@
         <ThoiLuong>130</ThoiLuong>
         <NgayKhoiChieu>2024-04-12</NgayKhoiChieu>
         <MoTa>Hai quái thú huyền thoại hợp lực</MoTa>
-        <MaTheLoai>1</MaTheLoai>
+        <MaTheLoai>5</MaTheLoai>
     </phim>
     <phim>
         <MaPhim>6</MaPhim>
@@ -314,7 +307,6 @@
         <MoTa>Cuộc phiêu lưu âm nhạc của Nobita</MoTa>
         <MaTheLoai>4</MaTheLoai>
     </phim>
-    
     <!-- LỊCH CHIẾU -->
     <lichchieu>
         <MaLich>1</MaLich>
@@ -342,78 +334,78 @@
         <MaPhim>4</MaPhim>
         <ThoiGianChieu>2024-07-04T10:00:00</ThoiGianChieu>
         <GiaVe>85000</GiaVe>
-        <MaPhong>1</MaPhong>
+        <MaPhong>4</MaPhong>
     </lichchieu>
     <lichchieu>
         <MaLich>5</MaLich>
         <MaPhim>5</MaPhim>
         <ThoiGianChieu>2024-07-05T16:00:00</ThoiGianChieu>
         <GiaVe>100000</GiaVe>
-        <MaPhong>2</MaPhong>
+        <MaPhong>5</MaPhong>
     </lichchieu>
     <lichchieu>
         <MaLich>6</MaLich>
         <MaPhim>6</MaPhim>
         <ThoiGianChieu>2024-07-06T20:00:00</ThoiGianChieu>
         <GiaVe>130000</GiaVe>
-        <MaPhong>3</MaPhong>
+        <MaPhong>6</MaPhong>
     </lichchieu>
     <lichchieu>
         <MaLich>7</MaLich>
         <MaPhim>7</MaPhim>
         <ThoiGianChieu>2024-07-07T09:00:00</ThoiGianChieu>
         <GiaVe>75000</GiaVe>
-        <MaPhong>1</MaPhong>
+        <MaPhong>7</MaPhong>
     </lichchieu>
-    
-    <!-- VÉ - Changed SoGhe to MaGhe for reference -->
+    <!-- VÉ -->
     <ve>
         <MaVe>1</MaVe>
         <MaLich>1</MaLich>
         <MaKH>1</MaKH>
         <NgayMua>2024-06-29T10:30:00</NgayMua>
-        <MaGhe>1</MaGhe>
+        <SoGhe>A1</SoGhe>
     </ve>
     <ve>
         <MaVe>2</MaVe>
         <MaLich>2</MaLich>
         <MaKH>2</MaKH>
         <NgayMua>2024-06-30T09:00:00</NgayMua>
-        <MaGhe>2</MaGhe>
+        <SoGhe>B3</SoGhe>
     </ve>
     <ve>
         <MaVe>3</MaVe>
         <MaLich>3</MaLich>
         <MaKH>3</MaKH>
         <NgayMua>2024-07-01T11:15:00</NgayMua>
-        <MaGhe>3</MaGhe>
+        <SoGhe>C5</SoGhe>
     </ve>
     <ve>
         <MaVe>4</MaVe>
         <MaLich>4</MaLich>
         <MaKH>4</MaKH>
         <NgayMua>2024-07-02T14:10:00</NgayMua>
-        <MaGhe>4</MaGhe>
+        <SoGhe>D2</SoGhe>
     </ve>
     <ve>
         <MaVe>5</MaVe>
         <MaLich>5</MaLich>
         <MaKH>5</MaKH>
         <NgayMua>2024-07-03T15:45:00</NgayMua>
-        <MaGhe>5</MaGhe>
+        <SoGhe>A4</SoGhe>
     </ve>
     <ve>
         <MaVe>6</MaVe>
         <MaLich>6</MaLich>
         <MaKH>6</MaKH>
         <NgayMua>2024-07-04T18:20:00</NgayMua>
-        <MaGhe>6</MaGhe>
+        <SoGhe>B1</SoGhe>
     </ve>
     <ve>
         <MaVe>7</MaVe>
         <MaLich>7</MaLich>
         <MaKH>7</MaKH>
         <NgayMua>2024-07-05T08:50:00</NgayMua>
-        <MaGhe>7</MaGhe>
+        <SoGhe>C2</SoGhe>
     </ve>
+    
 </rapphim>

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LichChieu",
+  "type": "object",
+    "properties": {
+    "lichchieu": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "MaLich": { "type": "integer", "minimum": 1 },
+          "MaPhim": { "type": "integer", "minimum": 1 },
+          "ThoiGianChieu": { "type": "string", "format": "date-time" },
+          "GiaVe": { "type": "integer", "minimum": 0 },
+          "MaPhong": { "type": "integer", "minimum": 1 }
+        },
+        "required": ["MaLich", "MaPhim", "ThoiGianChieu"]
+      }
+    }
+  },
+  "required": ["lichchieu"]
+}

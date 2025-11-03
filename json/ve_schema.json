@@ -1,0 +1,22 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Ve",
+    "type": "object",
+    "properties": {
+        "ve": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "MaVe": { "type": "integer", "minimum": 1 },
+                    "MaLich": { "type": "integer", "minimum": 1 },
+                    "MaKH": { "type": "integer", "minimum": 1 },
+                    "NgayMua": { "type": "string", "format": "date-time" },
+                    "SoGhe": { "type": "string" }
+                },
+                "required": ["MaVe", "MaLich"]
+            }
+        }
+    },
+    "required": ["ve"]
+}

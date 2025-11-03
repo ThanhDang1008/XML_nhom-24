@@ -142,7 +142,7 @@
         <Hang>A</Hang>
         <Cot>1</Cot>
         <LoaiGhe>Ghế thường</LoaiGhe>
-        <TrangThai>Trống</TrangThai>
+    <TrangThai>false</TrangThai>
         <MaPhong>1</MaPhong>
     </sodoghe>
     <sodoghe>
@@ -151,7 +151,7 @@
         <Hang>A</Hang>
         <Cot>2</Cot>
         <LoaiGhe>Ghế VIP</LoaiGhe>
-        <TrangThai>Đã đặt</TrangThai>
+    <TrangThai>true</TrangThai>
         <MaPhong>2</MaPhong>
     </sodoghe>
     <sodoghe>
@@ -160,7 +160,7 @@
         <Hang>B</Hang>
         <Cot>1</Cot>
         <LoaiGhe>Ghế thường</LoaiGhe>
-        <TrangThai>Trống</TrangThai>
+    <TrangThai>false</TrangThai>
         <MaPhong>3</MaPhong>
     </sodoghe>
     <sodoghe>
@@ -169,7 +169,7 @@
         <Hang>B</Hang>
         <Cot>2</Cot>
         <LoaiGhe>Ghế VIP</LoaiGhe>
-        <TrangThai>Trống</TrangThai>
+    <TrangThai>false</TrangThai>
         <MaPhong>4</MaPhong>
     </sodoghe>
     <sodoghe>
@@ -178,7 +178,7 @@
         <Hang>C</Hang>
         <Cot>1</Cot>
         <LoaiGhe>Ghế thường</LoaiGhe>
-        <TrangThai>Trống</TrangThai>
+    <TrangThai>false</TrangThai>
         <MaPhong>5</MaPhong>
     </sodoghe>
     <sodoghe>
@@ -187,7 +187,7 @@
         <Hang>C</Hang>
         <Cot>2</Cot>
         <LoaiGhe>Ghế thường</LoaiGhe>
-        <TrangThai>Đã đặt</TrangThai>
+    <TrangThai>true</TrangThai>
         <MaPhong>6</MaPhong>
     </sodoghe>
     <sodoghe>
@@ -196,7 +196,7 @@
         <Hang>D</Hang>
         <Cot>1</Cot>
         <LoaiGhe>Ghế VIP</LoaiGhe>
-        <TrangThai>Trống</TrangThai>
+    <TrangThai>false</TrangThai>
         <MaPhong>7</MaPhong>
     </sodoghe>
     

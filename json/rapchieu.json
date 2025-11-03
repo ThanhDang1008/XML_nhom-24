@@ -1,0 +1,18 @@
+{
+  "rapchieu": [
+    {
+      "MaRap": 1,
+      "TenRap": "CGV Aeon Mall Tân Phú",
+      "DiaChi": "30 Bờ Bao Tân Thắng, Sơn Kỳ, Tân Phú, TP.HCM",
+      "SucChua": 300,
+      "SoDienThoai": "02836201010"
+    },
+    {
+      "MaRap": 2,
+      "TenRap": "Galaxy Nguyễn Du",
+      "DiaChi": "116 Nguyễn Du, Quận 1, TP.HCM",
+      "SucChua": 250,
+      "SoDienThoai": "02839297007"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "phongchieu": [
+    { "MaPhong": 1, "SoPhong": "101", "LoaiPhong": "2D", "SucChua": 150 },
+    { "MaPhong": 2, "SoPhong": "102", "LoaiPhong": "3D", "SucChua": 120 }
+  ]
+}

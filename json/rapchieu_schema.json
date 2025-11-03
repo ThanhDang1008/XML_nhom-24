@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "RapChieu",
   "type": "object",
   "properties": {
@@ -12,9 +12,9 @@
           "TenRap": { "type": "string" },
           "DiaChi": { "type": "string" },
           "SucChua": { "type": "integer", "minimum": 1 },
-          "SoDienThoai": { "type": "string", "pattern": "^[0-9]{10,11}$" }
+          "SoDienThoai": { "type": "string", "pattern": "^[0-9]{10}$" }
         },
-        "required": ["MaRap", "TenRap", "DiaChi"]
+        "required": ["MaRap", "TenRap", "DiaChi"] 
       }
     }
   },

@@ -1,6 +1,6 @@
 from lxml import etree
 
-# Đọc file XML
+
 tree = etree.parse("rapphim.xml")
 
 

@@ -5,9 +5,11 @@
     <xsl:template match="/">
         <html>
             <head><title>Danh sách phim</title></head>
-            <body>
+            <body> 
+                
+            
                 <h2>Rap chieu</h2>
-                <table border="1" cellspacing="0" cellpadding="5">
+                <table border="1"  cellpadding="5">
                     <tr bgcolor="#b0e0e6">
                         <th>Mã Rạp</th><th>Tên Rạp</th><th>Đại chỉ</th><th>sức chứa</th><th>Sdt</th>
                     </tr>
@@ -23,7 +25,7 @@
                 </table>
                 
                 <h2>Phòng Chiếu</h2>
-                <table border="1" cellspacing="0" cellpadding="5">
+                <table border="1"  cellpadding="5">
                     <tr bgcolor="#b0e0e6">
                         <th>MaPhong</th><th>Số Phòng</th><th>loai Phòng</th><th>sức chứa</th>
                     </tr>
@@ -37,9 +39,9 @@
                         </tr>
                     </xsl:for-each>
                 </table>
-             <!-- bang the loai -->
+    <!-- bang the loai -->
                 <h2>The loai</h2>
-                <table border="1" cellspacing="0" cellpadding="5">
+                <table border="1"  cellpadding="5">
                     <tr bgcolor="#b0e0e6">
                         <th>MaTheLoai</th><th>Ten the loai</th><th>MoTa</th>
                     </tr>
@@ -53,7 +55,7 @@
                 </table>
                 
                 <h2>Sơ Đồ Ghế </h2>
-                <table border="1" cellspacing="0" cellpadding="5">
+                <table border="1" cellpadding="5">
                     <tr bgcolor="#b0e0e6">
                         <th>Mã Ghế</th><th>Số ghế</th><th>Hang</th><th>Cot</th><th>LoaiGhe</th> <th>Trạng Thái</th> <th>ma phòng</th>
                     </tr>
@@ -72,7 +74,7 @@
                 
                 
                 <h2>Khách Hàng </h2>
-                <table border="1" cellspacing="0" cellpadding="5">
+                <table border="1"  cellpadding="5">
                     <tr bgcolor="#b0e0e6">
                         <th>Mã Kh</th><th>Họ Tên</th><th>Email</th><th>Dịa Chỉ</th><th>Số Điện Thoại</th>
                     </tr>
@@ -90,7 +92,7 @@
                 
 
                 <h2>Danh sách phim </h2>
-                <table border="1" cellspacing="0" cellpadding="5">
+                <table border="1"  cellpadding="5">
                     <tr bgcolor="#b0e0e6">
                         <th>Mã phim</th><th>Tên phim</th><th>Thời lượng</th><th>Ngày khởi chiếu</th>
                     </tr>
@@ -104,7 +106,7 @@
                     </xsl:for-each>
                 </table>
                 <h2>Lich Chiếu</h2>
-                <table border="1" cellspacing="0" cellpadding="5">
+                <table border="1" cellpadding="5">
                     <tr bgcolor="#b0e0e6">
                         <th>Mã lịch</th><th>Mã phim</th><th>Thời Gian Chiếu</th><th>Giá Vé</th> <th>Mã Phòng</th>
                     </tr>
@@ -123,7 +125,7 @@
         
                 
                 <h2>Ve</h2>
-                <table border="1" cellspacing="0" cellpadding="5">
+                <table border="1" cellpadding="5">
                     <tr bgcolor="#b0e0e6">
                         <th>Mã vé</th><th>MaLich</th><th>Mã Khách Hàng </th> <th>Ngày Mua</th><th>Số Ghế</th>
                     </tr>

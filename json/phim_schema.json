@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Phim",
   "type": "object",
   "properties": {
@@ -8,16 +8,39 @@
       "items": {
         "type": "object",
         "properties": {
-                            "MaPhim": { "type": "integer", "minimum": 1 },
-                            "TenPhim": { "type": "string" },
-                            "ThoiLuong": { "type": "integer", "minimum": 1 },
-                            "NgayKhoiChieu": { "type": "string", "format": "date" },
-                            "MoTa": { "type": "string" },
-                            "MaTheLoai": { "type": "integer", "minimum": 1 }
+          "MaPhim": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "TenPhim": {
+            "type": "string"
+          },
+          "ThoiLuong": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "NgayKhoiChieu": {
+            "type": "string",
+            "format": "date"
+          },
+          "MoTa": {
+            "type": "string"
+          },
+          "MaTheLoai": {
+            "type": "integer",
+            "minimum": 1
+          }
         },
-        "required": ["MaPhim", "TenPhim", "ThoiLuong", "NgayKhoiChieu"]
+        "required": [
+          "MaPhim",
+          "TenPhim",
+          "ThoiLuong",
+          "NgayKhoiChieu"
+        ]
       }
     }
   },
-  "required": ["phim"]
+  "required": [
+    "phim"
+  ]
 }

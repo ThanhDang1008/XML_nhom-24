@@ -14,9 +14,12 @@
                     "NgayMua": { "type": "string", "format": "date-time" },
                     "SoGhe": { "type": "string" }
                 },
-                "required": ["MaVe", "MaLich"]
+                "required": ["MaVe", "MaLich"],
+                  "additionalProperties": false
+
             }
         }
     },
-    "required": ["ve"]
+    "required": ["ve"],
+    "additionalProperties": false
 }

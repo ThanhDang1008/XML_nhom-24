@@ -14,9 +14,11 @@
           "SucChua": { "type": "integer", "minimum": 1 },
           "SoDienThoai": { "type": "string", "pattern": "^[0-9]{10}$" }
         },
-        "required": ["MaRap", "TenRap", "DiaChi"] 
+        "required": ["MaRap", "TenRap", "DiaChi"] ,
+          "additionalProperties": false
       }
     }
   },
-  "required": ["rapchieu"]
+  "required": ["rapchieu"],
+    "additionalProperties": false
 }

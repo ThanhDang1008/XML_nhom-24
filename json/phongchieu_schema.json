@@ -9,14 +9,15 @@
         "type": "object",
         "properties": {
           "MaPhong": { "type": "integer", "minimum": 1 },
-          "MaRap": { "type": "integer", "minimum": 1 },
           "SoPhong": { "type": "string" },
           "LoaiPhong": { "type": "string" },
           "SucChua": { "type": "integer", "minimum": 1 }
         },
-        "required": ["MaPhong", "SoPhong", "MaRap"]
+        "required": ["MaPhong", "SoPhong"],
+          "additionalProperties": false
       }
     }
   },
-  "required": ["phongchieu"]
+  "required": ["phongchieu"],
+    "additionalProperties": false
 }

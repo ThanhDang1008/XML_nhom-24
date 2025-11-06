@@ -24,6 +24,8 @@
                     </xsl:for-each>
                 </table>
                 
+                
+                
                 <h2>Phòng Chiếu</h2>
                 <table border="1"  cellpadding="5">
                     <tr bgcolor="#b0e0e6">
@@ -39,6 +41,25 @@
                         </tr>
                     </xsl:for-each>
                 </table>
+                
+                
+                <!-- chi hien thi phong chieu co suc chua > 100 -->
+                <h2>Phòng Chiếu có sức chứa lon hon 100</h2>
+                <table border="1"  cellpadding="5">
+                    <tr bgcolor="#b0e0e6">
+                        <th>MaPhong</th><th>Số Phòng</th><th>loai Phòng</th><th>sức chứa</th>
+                    </tr>
+                    <xsl:for-each select="rapphim/phongchieu[SucChua &gt; 100]">
+                        <tr>
+                            <td><xsl:value-of select="MaPhong"/></td>
+                            <td><xsl:value-of select="SoPhong"/></td>
+                            <td><xsl:value-of select="LoaiPhong"/></td>
+                            <td><xsl:value-of select="SucChua"/></td>
+                            
+                        </tr>
+                    </xsl:for-each>
+                </table>
+                
     <!-- bang the loai -->
                 <h2>The loai</h2>
                 <table border="1"  cellpadding="5">
@@ -105,6 +126,36 @@
                         </tr>
                     </xsl:for-each>
                 </table>
+                
+                <h2> phim </h2>
+                <table border="1"  cellpadding="5">
+                    <tr bgcolor="#b0e0e6">
+                       <th>Tên phim</th>
+                    </tr>
+                    <xsl:for-each select="rapphim/phim">
+                        <tr>
+                       
+                            <td><xsl:value-of select="TenPhim"/></td>
+                          
+                        </tr>
+                    </xsl:for-each>
+                </table>
+                
+                <h2> phim  co thời lượng hơn 100</h2>
+                <table border="1"  cellpadding="5">
+                    <tr bgcolor="#b0e0e6">
+                        <th>Tên phim</th>
+                    </tr>
+                    <xsl:for-each select="rapphim/phim[ThoiLuong &gt; 100]">
+                        <tr>
+                            
+                            <td><xsl:value-of select="TenPhim"/></td>
+                            
+                        </tr>
+                    </xsl:for-each>
+                </table>
+                
+                
                 <h2>Lich Chiếu</h2>
                 <table border="1" cellpadding="5">
                     <tr bgcolor="#b0e0e6">
@@ -140,7 +191,19 @@
                     </xsl:for-each>
                 </table>
                 
-                
+                <h2>The loai</h2>
+                <table border="1"  cellpadding="5">
+                    <tr bgcolor="#b0e0e6">
+                        <th>MaTheLoai</th><th>Ten the loai</th><th>MoTa</th>
+                    </tr>
+                    <xsl:for-each select="rapphim/theloai[starts-with(TenTheLoai, 'Hành động')]">
+                        <tr>
+                            <td><xsl:value-of select="MaTheLoai"/></td>
+                            <td><xsl:value-of select="TenTheLoai"/></td>
+                            <td><xsl:value-of select="MoTa"/></td>
+                        </tr>
+                    </xsl:for-each>
+                </table>
 
                 
             </body>

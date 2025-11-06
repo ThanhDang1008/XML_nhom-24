@@ -36,11 +36,13 @@
           "TenPhim",
           "ThoiLuong",
           "NgayKhoiChieu"
-        ]
+        ],
+          "additionalProperties": false
       }
     }
   },
   "required": [
     "phim"
-  ]
+  ],
+    "additionalProperties": false
 }

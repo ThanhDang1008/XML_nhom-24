@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "LichChieu",
   "type": "object",
-    "properties": {
+  "properties": {
     "lichchieu": {
       "type": "array",
       "items": {
@@ -14,9 +14,12 @@
           "GiaVe": { "type": "integer", "minimum": 0 },
           "MaPhong": { "type": "integer", "minimum": 1 }
         },
-        "required": ["MaLich", "MaPhim", "ThoiGianChieu"]
+        "required": ["MaLich", "MaPhim", "ThoiGianChieu"],
+        "additionalProperties": false
+
       }
     }
   },
-  "required": ["lichchieu"]
+  "required": ["lichchieu"],
+  "additionalProperties": false
 }

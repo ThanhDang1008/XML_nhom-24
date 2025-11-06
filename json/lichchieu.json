@@ -6,6 +6,15 @@
       "ThoiGianChieu": "2024-07-01T19:00:00",
       "GiaVe": 120000,
       "MaPhong": 1
+    },
+    {
+      "MaLich":2,
+      "MaPhim": 2,
+      "ThoiGianChieu": "2024-07-02T14:00:00",
+      "GiaVe": 90000,
+      "MaPhong": 2
+
     }
   ]
 }
+
